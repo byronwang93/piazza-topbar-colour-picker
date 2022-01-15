@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Piazza Topbar Colour Changer",
+    "description": "Change the colour of your piazza topbar to match a uniqye hex code or colour of your choice!",
+    "version": "1.0.0",
+    "icons": { "128": "128.png"},
+    "content_scripts": [
+        {
+            "matches": ["*://*.piazza.com/*"],
+            "js": ["index.js"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Piazza Topbar Colour Changer"
+    }
+}
