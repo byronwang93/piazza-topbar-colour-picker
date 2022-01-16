@@ -6,15 +6,18 @@
     "manifest_version": 2,
     "background": {
         "scripts": [
-            "popup.js"
+            "popup.js",
+            "loadSavedColor.js"
         ],
-        "persistent": true
+        "persistent": false
     },
     "browser_action": {
         "default_title": "Piazza Topbar Colour Changer",
         "default_popup": "popup.html"
     },
     "permissions": [
-        "*://*.piazza.com/*"
+        "*://*.piazza.com/*",
+        "storage",
+        "tabs"
     ]
 }
