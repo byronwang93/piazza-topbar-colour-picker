@@ -4,9 +4,8 @@ if (document.querySelector(".popup")) {
     const colourButton = document.querySelector(".colour-button");
 
     colourButton.addEventListener("click", () => {
-        chrome.tabs.executeScript({
-            code: "topbar.style.backgroundColor = 'green';",
-        });
+        var userInput = document.getElementById("new-colour").value;
+        chrome.tabs.executeScript({code:"var userInput = '"+userInput+"'; try{topbar.style.backgroundColor = userInput;}catch(e){alert(e);}"},null);
     });
 
 
