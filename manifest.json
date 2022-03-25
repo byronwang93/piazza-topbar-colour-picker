@@ -16,7 +16,7 @@
         "default_popup": "popup.html"
     },
     "permissions": [
-        "*://*.piazza.com/*",
+        "*://*.piazza.com/class/*",
         "storage",
         "tabs"
     ]
